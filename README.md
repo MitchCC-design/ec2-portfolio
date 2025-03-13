@@ -48,9 +48,7 @@ Deploy via AWS MC
 4. Launch the instance and wait for the initialization process to complete.  
 5. Retrieve the Public IP Address of the EC2 instance from the AWS console and access the portfolio website via a web browser.  
 
-Deploy via AWS CLI & Terraform
-
-Using the AWS CLI, use the following command (update with the appropriate values):  
+Deploy via AWS CLI vs Terraform
 
 ```bash
 aws ec2 run-instances \
@@ -62,7 +60,7 @@ aws ec2 run-instances \
   --subnet-id subnet-xxxxxxxxxxxxx \
   --user-data file://user-data.sh
 
-Using Terraform
+-------------------------
 ️⃣Clone the Repository
 ```bash
 git clone https://github.com/MitchCC-design/ec2-portfolio.git
