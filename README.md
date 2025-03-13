@@ -1,6 +1,7 @@
-# EC2 Portfolio Website  
+# EC2 Portfolio Website (Now Using Terraform)
 
-This repository contains the automated deployment script and configuration for a professional portfolio website hosted on AWS EC2. The project leverages AWS cloud infrastructure to provide a scalable, efficient, and fully automated web hosting solution.
+This repository contains the infrastructure code for deploying a professional portfolio website on AWS EC2. Originally, this project was manually deployed using the AWS Console, but it has now been fully automated using Terraform.
+
 
 ## Project Overview  
 
@@ -10,6 +11,17 @@ This project is designed to deploy a minimalistic and professional portfolio web
 - A custom HTML-based portfolio website is deployed dynamically.
 
 The project demonstrates infrastructure automation principles and provides a structured approach to hosting static web content on AWS.
+
+Changes:
+- The EC2 instance is now provisioned through Terraform instead of being created manually.
+- Infrastructure as Code (IaC) is used to manage and modify the deployment.
+- The User Data script is automatically injected during instance creation.
+
+Deployment Using Terraform:
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/MitchCC-design/ec2-portfolio.git
+   cd ec2-portfolio
 
 ## Features  
 
