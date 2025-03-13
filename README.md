@@ -1,9 +1,6 @@
-# EC2 Portfolio Website (Now Using Terraform)
+This repository contains the Infrastructure as Code (IaC) configuration for deploying a professional portfolio website on AWS EC2. Originally, this project was **manually deployed using the AWS Console**, but it has now been **fully automated using Terraform**.
 
-This repository contains the infrastructure code for deploying a professional portfolio website on AWS EC2. Originally, this project was manually deployed using the AWS Console, but it has now been fully automated using Terraform.
-
-
-## Project Overview  
+ Project Overview  
 
 This project is designed to deploy a minimalistic and professional portfolio website using an AWS EC2 instance. The deployment is automated via an EC2 User Data script, which ensures that upon instance launch:
 - The system is updated, and necessary dependencies are installed.
@@ -15,15 +12,9 @@ The project demonstrates infrastructure automation principles and provides a str
 Changes:
 - The EC2 instance is now provisioned through Terraform instead of being created manually.
 - Infrastructure as Code (IaC) is used to manage and modify the deployment.
-- The User Data script is automatically injected during instance creation.
+- The User Data script is automatically injected during instance creation.t
 
-Deployment Using Terraform:
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/MitchCC-design/ec2-portfolio.git
-   cd ec2-portfolio
-
-## Features  
+Features  
 
 - Automated EC2 Setup – No manual configuration required.  
 - Minimalist and Professional Web Design – A clean, responsive portfolio layout.  
@@ -31,7 +22,7 @@ Deployment Using Terraform:
 - Scalability and Availability – Easily extendable for high availability configurations.  
 - Version-Controlled – The project is managed through Git for structured development and updates.  
 
-## Technology Stack  
+Technology Stack  
 
 - AWS EC2 – Cloud-based compute instance for hosting the website.  
 - Amazon Linux 2 – The operating system used for the EC2 instance.  
@@ -40,9 +31,16 @@ Deployment Using Terraform:
 - Terraform – Infrastructure as Code (IaC) for provisioning AWS resources.  
 - Git & GitHub – Version control and remote repository management.  
 
-## Deployment Instructions  
 
-### Deploy via AWS Management Console 
+Changes: Transition to Terraform
+- The EC2 instance is now provisioned through Terraform instead of being created manually.  
+- **Infrastructure as Code (IaC) is used to manage and modify the deployment.  
+- The User Data script is automatically injected during instance creation.  
+- Terraform ensures easy replication and version-controlled infrastructure updates.  
+
+Deployment Instructions  
+
+Deploy via AWS Management Console 
 
 1. Launch a new AWS EC2 instance and select Amazon Linux 2 as the AMI.  
 2. Configure instance settings and security groups to allow inbound HTTP (port 80) traffic.  
@@ -50,7 +48,7 @@ Deployment Using Terraform:
 4. Launch the instance and wait for the initialization process to complete.  
 5. Retrieve the Public IP Address of the EC2 instance from the AWS console and access the portfolio website via a web browser.  
 
-### Deploy via AWS CLI 
+Deploy via AWS CLI 
 
 To deploy the EC2 instance using the AWS CLI, use the following command (update with the appropriate values):  
 
@@ -63,3 +61,9 @@ aws ec2 run-instances \
   --security-group-ids sg-xxxxxxxxxxxxx \
   --subnet-id subnet-xxxxxxxxxxxxx \
   --user-data file://user-data.sh
+
+Deployment Using Terraform
+️⃣Clone the Repository
+```bash
+git clone https://github.com/MitchCC-design/ec2-portfolio.git
+cd ec2-portfolio
