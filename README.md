@@ -11,7 +11,7 @@ The project demonstrates infrastructure automation principles and provides a str
 # Changes:
 - The EC2 instance is now provisioned through Terraform instead of being created manually.
 - Infrastructure as Code (IaC) is used to manage and modify the deployment.
-- The User Data script is automatically injected during instance creation.t
+- The User Data script is automatically injected during instance creation.
 
 # Features  
 - Automated EC2 Setup – No manual configuration required.  
