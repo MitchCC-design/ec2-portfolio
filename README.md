@@ -40,7 +40,7 @@ Changes: Transition to Terraform
 
 Deployment Instructions  
 
-Deploy via AWS Management Console 
+Deploy via AWS MC
 
 1. Launch a new AWS EC2 instance and select Amazon Linux 2 as the AMI.  
 2. Configure instance settings and security groups to allow inbound HTTP (port 80) traffic.  
@@ -48,9 +48,9 @@ Deploy via AWS Management Console
 4. Launch the instance and wait for the initialization process to complete.  
 5. Retrieve the Public IP Address of the EC2 instance from the AWS console and access the portfolio website via a web browser.  
 
-Deploy via AWS CLI 
+Deploy via AWS CLI & Terraform
 
-To deploy the EC2 instance using the AWS CLI, use the following command (update with the appropriate values):  
+Using the AWS CLI, use the following command (update with the appropriate values):  
 
 ```bash
 aws ec2 run-instances \
@@ -62,7 +62,7 @@ aws ec2 run-instances \
   --subnet-id subnet-xxxxxxxxxxxxx \
   --user-data file://user-data.sh
 
-Deployment Using Terraform
+Using Terraform
 ️⃣Clone the Repository
 ```bash
 git clone https://github.com/MitchCC-design/ec2-portfolio.git
