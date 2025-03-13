@@ -34,7 +34,7 @@ Technology Stack
 
 Changes: Transition to Terraform
 - The EC2 instance is now provisioned through Terraform instead of being created manually.  
-- **Infrastructure as Code (IaC) is used to manage and modify the deployment.  
+- Infrastructure as Code (IaC) is used to manage and modify the deployment.  
 - The User Data script is automatically injected during instance creation.  
 - Terraform ensures easy replication and version-controlled infrastructure updates.  
 
