@@ -1,4 +1,4 @@
-This repository contains the Infrastructure as Code (IaC) configuration for deploying a professional portfolio website on AWS EC2. Originally, this project was **manually deployed using the AWS Console**, but it has now been **fully automated using Terraform**.
+This repository contains the Infrastructure as Code (IaC) configuration for deploying a professional portfolio website on AWS EC2. Originally, this project was manually deployed using the AWS Console, but it has now been fully automated using Terraform.
 
  Project Overview  
 
